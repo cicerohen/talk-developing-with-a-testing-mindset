@@ -1,0 +1,51 @@
+{
+  "name": "jest-react-testng-library-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "styled-components": "^5.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "jest-styled-components": "^7.0.0",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "chai": "^4.2.0",
+    "fetch-mock": "^8.3.2",
+    "isomorphic-fetch": "^2.2.1",
+    "mocha": "^7.0.0",
+    "mocha-jsdom": "^2.0.0",
+    "regenerator": "^0.14.2",
+    "core-js": "3.6.4",
+    "sinon": "^8.1.0",
+    "sinon-chai": "^3.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test:jest": "react-scripts test --roots src/components",
+    "test:mocha": "mocha  --require @babel/register 'src/utils/**/*.spec.js'",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
